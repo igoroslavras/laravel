@@ -45,6 +45,7 @@ class adicionarController extends Controller
         $user->valor = Input::get('valor');
         $user->vencimento = Input::get('vencimento');
         $user->save();
+		return view('adicionar');
         
         }
 
